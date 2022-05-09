@@ -1,0 +1,57 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "menuconfig",
+      "appliesTo": "*",
+      "type": "launch",
+      "inheritEnvironments": [
+        "linux_x64"
+      ],
+      "command": "idf_py_menuconfig.cmd"
+    },
+    {
+      "taskLabel": "flash",
+      "appliesTo": "*",
+      "type": "launch",
+      "inheritEnvironments": [
+        "linux_x64"
+      ],
+      "command": "idf.py",
+      "args": [
+        "flash -p ${env.FLASH_COM_PORT}"
+      ]
+    },
+    {
+      "taskLabel": "flash monitor",
+      "appliesTo": "*",
+      "type": "launch",
+      "inheritEnvironments": [
+        "linux_x64"
+      ],
+      "command": "idf_py_flash_monitor.cmd",
+      "args": [
+        "${env.FLASH_COM_PORT}"
+      ]
+    },
+    {
+      "taskLabel": "monitor",
+      "appliesTo": "*",
+      "type": "launch",
+      "inheritEnvironments": [
+        "linux_x64"
+      ],
+      "command": "idf_py_monitor.cmd"
+    },
+    {
+      "taskLabel": "task-go_led_coord",
+      "appliesTo": "go_led_coord.txt",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-color",
+      "appliesTo": "main/color.h",
+      "type": "launch"
+    }
+  ]
+}
