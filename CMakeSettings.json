@@ -1,0 +1,64 @@
+﻿{
+  "configurations": [
+    {
+      "name": "ESP-IDF_4_4-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "linux_x64" ],
+      "buildRoot": "${projectDir}\\build",
+      "installRoot": "${projectDir}\\install",
+      "cmakeCommandArgs": "--warn-uninitialized",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "environments": [
+        {
+          "IDF_TOOLS_PATH": "C:\\work\\Espressif",
+          "ESP_DIR": "C:\\Users\\Georgij\\.espressif",
+          "IDF_GIT_DIR": "${env.IDF_TOOLS_PATH}\\tools\\idf-git\\2.34.2\\cmd\\",
+          "IDF_PATH": "${env.IDF_TOOLS_PATH}\\frameworks\\esp-idf-v4.4",
+          "IDF_PYTHON_ENV_PATH": "${env.ESP_DIR}\\python_env\\idf4.4_py3.8_env",
+          "IDF_PYTHON_DIR": "${env.IDF_TOOLS_PATH}\\tools\\idf-python\\3.8.7",
+          "XTENSA_ESP32_PATH": "${env.IDF_TOOLS_PATH}\\tools\\xtensa-esp32-elf\\esp-2021r2-patch2-8.4.0\\xtensa-esp32-elf",
+          "XTENSA_ESP32_S2_PATH": "${env.IDF_TOOLS_PATH}\\tools\\xtensa-esp32s2-elf\\esp-2021r2-patch2-8.4.0\\xtensa-esp32s2-elf",
+          "XTENSA_ESP32_S3_PATH": "${env.IDF_TOOLS_PATH}\\tools\\xtensa-esp32s3-elf\\esp-2021r2-patch2-8.4.0\\xtensa-esp32s3-elf",
+          "RISCV_ESP32_PATH": "${env.IDF_TOOLS_PATH}\\tools\\riscv32-esp-elf\\esp-2021r2-patch2-8.4.0\\riscv32-esp-elf",
+          "ESP32_ULP_PATH": "${env.IDF_TOOLS_PATH}\\tools\\esp32ulp-elf\\2.28.51-esp-20191205\\esp32ulp-elf-binutils\\bin",
+          "ESP32_S2_ULP_PATH": "${env.IDF_TOOLS_PATH}\\tools\\esp32s2ulp-elf\\2.28.51-esp-20191205\\esp32s2ulp-elf-binutils\\bin",
+          "IDF_CMAKE": "${env.IDF_TOOLS_PATH}\\tools\\cmake\\3.20.3\\bin",
+          "OPENOCD_SCRIPTS": "${env.IDF_TOOLS_PATH}\\tools\\openocd-esp32\\v0.11.0-esp32-20211220\\openocd-esp32\\share\\openocd\\scripts",
+          "IDF_NINJA_PATH": "${env.IDF_TOOLS_PATH}\\tools\\ninja\\1.10.2",
+          "IDF_EXE_PATH": "${env.IDF_TOOLS_PATH}\\tools\\idf-exe\\1.0.3",
+          "IDF_CACHE_PATH": "${env.IDF_TOOLS_PATH}\\tools\\ccache\\4.3\\ccache-4.3-windows-64",
+          "IDF_DFU_UTIL": "${env.IDF_TOOLS_PATH}\\tools\\dfu-util\\0.9\\dfu-util-0.9-win64",
+          "PATH": "${env.XTENSA_ESP32_PATH}\\bin;${env.XTENSA_ESP32_S2_PATH}\\bin;${env.XTENSA_ESP32_S3_PATH}\\bin;${env.RISCV_ESP32_PATH};${env.ESP32_ULP_PATH};${env.ESP32_S2_ULP_PATH};${env.IDF_NINJA_PATH}\\;${env.IDF_EXE_PATH}\\;${env.IDF_CACHE_PATH}\\;${env.IDF_DFU_UTIL}\\;${env.IDF_PYTHON_ENV_PATH}\\Scripts;${env.IDF_PATH}\\tools;${env.IDF_PATH};${env.PATH}",
+          "INCLUDE": "${env.XTENSA_ESP32_PATH}\\xtensa-esp32-elf\\include;${env.XTENSA_ESP32_S2_PATH}\\xtensa-esp32s2-elf\\include;${env.XTENSA_ESP32_S3_PATH}\\xtensa-esp32s3-elf\\include;${env.RISCV_ESP32_PATH}\\riscv32-esp-elf\\include;${env.IDF_PATH}\\components;${env.INCLUDE}",
+          "FLASH_COM_PORT": "COM4",
+          "environment": "linux_x64"
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x64",
+      "variables": [
+        {
+          "name": "IDF_TARGET",
+          "value": "esp32",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_MAKE_PROGRAM",
+          "value": "${env.IDF_NINJA_PATH}\\ninja.exe",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "CCACHE_ENABLE",
+          "value": "1",
+          "type": "STRING"
+        },
+        {
+          "name": "ESP_PLATFORM",
+          "value": "1",
+          "type": "STRING"
+        }
+      ]
+    }
+  ]
+}
