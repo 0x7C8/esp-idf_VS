@@ -26,7 +26,7 @@ This guide is based on the [post on ESP32 Forums](https://esp32.com/viewtopic.ph
 5. Choose **File - Open - CMake**, and select your project folder. Wait until **CMake Overview Pages** is shown.
 6. Click **Edit JSON**
 7. Replace all with the code from [CMakeSettings.json](CMakeSettings.json) and change the `USERNAME`, `FLASH_COM_PORT` and some paths if needed. Warning: updating ESP-IDF breaks the compatibility because paths change. Save file.
-8. Right click any file in the **Solution Explorer** and choose **Configure Tasks**. Replace all with code from `tasks_schema.json` and save file.
+8. Right click any file in the **Solution Explorer** and choose **Configure Tasks**. Replace all with code from [tasks.vs.json](tasks.vs.json) and save file.
 9. Place the following files [idf_py_menuconfig.cmd](idf_py_menuconfig.cmd), [idf_py_monitor.cmd](idf_py_monitor.cmd) and [idf_py_flash_monitor.cmd](idf_py_flash_monitor.cmd) in to `[your_IDF_path]\tools`.
 10. In Visual Studio, right click any file in the **Solution Explorer** and select **Run flash**. The project should start building and flashing afterwards (if the right COM port is selected).
 11. 
