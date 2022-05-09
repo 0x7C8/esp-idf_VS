@@ -29,8 +29,12 @@ This guide is based on the [post on ESP32 Forums](https://esp32.com/viewtopic.ph
 8. Right click any file in the **Solution Explorer** and choose **Configure Tasks**. Replace all with code from [tasks.vs.json](tasks.vs.json) and save file.
 9. Place the following files [idf_py_menuconfig.cmd](idf_py_menuconfig.cmd), [idf_py_monitor.cmd](idf_py_monitor.cmd) and [idf_py_flash_monitor.cmd](idf_py_flash_monitor.cmd) in to `[your_IDF_path]\tools`.
 10. In Visual Studio, right click any file in the **Solution Explorer** and select **Run flash**. The project should start building and flashing afterwards (if the right COM port is selected).
-11. TODO: ebugging 
+11. TODO: debugging 
+
+## Note:
+ - When the monitor is opened, the build menu will be disabled. So close the monitor before build again.
 
 ## Troubleshooting:
 
-If Python doesn't work, set `python` environment variable in the **System Environment Variables** to `C:\Users\[username]\.espressif\python_env\idf4.4_py3.8_env\Scripts\python.exe`
+- If Python doesn't work, set `python` environment variable in the **System Environment Variables** to `C:\Users\[username]\.espressif\python_env\idf4.4_py3.8_env\Scripts\python.exe`
+- CMake may retain previous output, to fix this select **Project - Delete Cache and Reconfigure**.
